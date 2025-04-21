@@ -7,7 +7,7 @@ sock_addr = (host, port)
 server_socket = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 server_socket.bind(sock_addr)
 server_socket.listen(5)
-
+## This my main loop file 
 while True:
     print("The server is waiting for the connection!")
     client_socket, addr = server_socket.accept()
